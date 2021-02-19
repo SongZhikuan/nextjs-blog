@@ -2,11 +2,12 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import React from "react";
 
 const name = '冉思齐'
 export const siteTitle = '冉思齐博客'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: { children: React.ReactNode, home?: boolean }) {
     return (
         <div className={styles.container}>
             <Head>
